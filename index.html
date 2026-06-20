@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patrick Boudreaux — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,246,244,0.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);">
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;height:64px;display:flex;align-items:center;gap:2rem;">
+      <div style="font-family:var(--ff-mono);font-size:13px;color:var(--gold);letter-spacing:0.12em;white-space:nowrap;">PATRICK&nbsp;BOUDREAUX</div>
+      <ul class="nav-links" style="list-style:none;margin:0;padding:0;gap:0.25rem;flex:1;justify-content:flex-end;">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#certs" class="nav-link">Certs</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#classcape" class="nav-link">ClasScape</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu" style="background:none;border:none;cursor:pointer;color:var(--ink);font-size:22px;line-height:1;padding:0.4rem 0.5rem;margin-left:auto;">☰</button>
+    </div>
+    <div class="mobile-menu" style="flex-direction:column;background:var(--white);border-top:1px solid var(--rule);padding:1rem 2rem;gap:0.25rem;">
+      <a href="#about" style="color:var(--ink-soft);text-decoration:none;font-size:15px;padding:0.6rem 0;border-bottom:1px solid var(--rule-soft);">About</a>
+      <a href="#certs" style="color:var(--ink-soft);text-decoration:none;font-size:15px;padding:0.6rem 0;border-bottom:1px solid var(--rule-soft);">Certs</a>
+      <a href="#experience" style="color:var(--ink-soft);text-decoration:none;font-size:15px;padding:0.6rem 0;border-bottom:1px solid var(--rule-soft);">Experience</a>
+      <a href="#work" style="color:var(--ink-soft);text-decoration:none;font-size:15px;padding:0.6rem 0;border-bottom:1px solid var(--rule-soft);">Work</a>
+      <a href="#classcape" style="color:var(--ink-soft);text-decoration:none;font-size:15px;padding:0.6rem 0;border-bottom:1px solid var(--rule-soft);">ClasScape</a>
+      <a href="#contact" style="color:var(--ink-soft);text-decoration:none;font-size:15px;padding:0.6rem 0;">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="top" style="background:var(--white);position:relative;display:flex;align-items:center;padding:9.5rem 0 4.5rem;overflow:hidden;border-bottom:2px solid var(--ink);">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(15,110,102,0.04) 1px, transparent 1px),linear-gradient(90deg, rgba(15,110,102,0.04) 1px, transparent 1px);background-size:60px 60px;"></div>
+    <div style="position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:800px;height:600px;pointer-events:none;background:radial-gradient(ellipse at center, color-mix(in oklab, var(--gold), transparent 92%) 0%, transparent 70%);"></div>
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;position:relative;z-index:2;width:100%;">
+      <div style="font-family:var(--ff-mono);font-size:12px;color:var(--gold);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:1.5rem;">Software Engineer · Portfolio</div>
+      <h1 style="font-family:var(--ff-display);font-size:clamp(2.6rem,5.6vw,4.8rem);font-weight:900;line-height:1.05;color:var(--ink);margin:0 0 1.5rem;">Patrick Boudreaux<br><em style="font-style: italic; color: var(--gold); font-weight: 700; font-size: 60px">My resume, rebuilt as software</em></h1>
+
+      <p style="font-size:1.15rem;color:var(--ink-soft);max-width:660px;margin:0 0 2.5rem;line-height:1.65;">I build applications, data tooling, AI integrations, and manage the cloud infrastructure behind them. From design through development, deployment, and maintenance. This portfolio walks through my resume and personal projects I've worked on, including a custom inventory system, a dual-database lookup tool with an AI integration, and a real-time reactive music engine.</p><div style="display:flex;flex-wrap:wrap;gap:1rem;">
+        <div style="background:var(--accent-bg);border:1px solid var(--rule);border-radius:6px;padding:0.75rem 1.25rem;display:flex;flex-direction:column;gap:0.15rem;">
+          <span style="font-family:var(--ff-display);font-size:1.5rem;font-weight:700;color:var(--gold);line-height:1;">B.S. Software Eng</span>
+          <span style="font-size:11px;color:var(--ink-mute);letter-spacing:0.06em;text-transform:uppercase;">2018</span>
+        </div>
+        <div style="background:var(--accent-bg);border:1px solid var(--rule);border-radius:6px;padding:0.75rem 1.25rem;display:flex;flex-direction:column;gap:0.15rem;">
+          <span style="font-family:var(--ff-display);font-size:1.5rem;font-weight:700;color:var(--gold);line-height:1;">6+ yrs</span>
+          <span style="font-size:11px;color:var(--ink-mute);letter-spacing:0.06em;text-transform:uppercase;">SOFTWARE DEVELOPMENT</span>
+        </div>
+        <div style="background:var(--accent-bg);border:1px solid var(--rule);border-radius:6px;padding:0.75rem 1.25rem;display:flex;flex-direction:column;gap:0.15rem;">
+          <span style="font-family:var(--ff-display);font-size:1.5rem;font-weight:700;color:var(--gold);line-height:1;">4 Certifications</span>
+          <span style="font-size:11px;color:var(--ink-mute);letter-spacing:0.06em;text-transform:uppercase;">AZURE&nbsp;<span style="letter-spacing: 0.66px;">·</span>&nbsp;CLAUDE&nbsp;<span style="letter-spacing: 0.66px;">·</span>&nbsp;XR</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="background:var(--white);padding:6rem 0;border-bottom:1px solid var(--rule);">
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;">
+      <div style="font-family:var(--ff-mono);font-size:11px;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">01 — About</div>
+      <h2 style="font-family:var(--ff-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;line-height:1.15;margin:0 0 2.5rem;color:var(--ink);">About Me</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:3rem;align-items:flex-start;">
+        <div style="flex:2 1 360px;">
+          <p style="color:var(--ink-soft);font-size:1.05rem;line-height:1.8;margin:0 0 1.25rem;">I'm a Mississippi State University graduate with a Bachelor's in Software Engineering, where I also co-led the Advanced Driver Assistance Systems (A.D.A.S.) team for the 2018 EcoCar competition. After graduating, I founded ClasScape, a VR assessment tool built in Unreal Engine 4 and WordPress. This led me to complete Lobaki's XR Academy in 2019 to deepen my virtual and augmented reality development experience.</p>
+          <p style="color:var(--ink-soft);font-size:1.05rem;line-height:1.8;margin:0 0 1.25rem;">For six years I worked as a remote web developer for Most Electric, an electronic-component distributor, where I managed four WordPress e-commerce sites I built. I also maintained, optimized, and extended a custom .NET inventory management system. I used REST APIs to pull orders from the WordPress sites and update products. I also handled on-site IT and ran the full software procurement cycle, from sourcing demos and quotes through purchasing, deployment, and training employees across worksites.</p>
+          <p style="color:var(--ink-soft);font-size:1.05rem;line-height:1.8;margin:0;">That role ended in June 2026 when All Current acquired Most Electric. I'm now an IT Specialist at All Current, leading the migration of Most's data, accounts, and software. I also provide helpdesk support and rack-and-stack work, while still maintaining the Most Electric website and inventory management software until the migration is complete.</p>
+        </div>
+        <div style="flex:1 1 240px;background:var(--off-white);border:1px solid var(--rule);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:1.25rem;">
+          <div>
+            <div style="font-family:var(--ff-mono);font-size:10.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold);margin-bottom:0.35rem;">Degree</div>
+            <div style="font-family:var(--ff-display);font-size:1.05rem;font-weight:600;color:var(--ink);line-height:1.3;">B.S. Software Engineering, MSU</div>
+          </div>
+          <div style="height:1px;background:var(--rule);"></div>
+          <div>
+            <div style="font-family:var(--ff-mono);font-size:10.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold);margin-bottom:0.35rem;">Core languages</div>
+            <div style="font-family:var(--ff-display);font-size:1.05rem;font-weight:600;color:var(--ink);line-height:1.3;">C# · .NET · SQL · JavaScript · PHP</div>
+          </div>
+          <div style="height:1px;background:var(--rule);"></div>
+          <div>
+            <div style="font-family:var(--ff-mono);font-size:10.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold);margin-bottom:0.35rem;">Focus</div>
+            <div style="font-family:var(--ff-display);font-size:1.05rem;font-weight:600;color:var(--ink);line-height:1.3;">Apps, Data, Cloud, AI</div>
+          </div>
+          <div style="height:1px;background:var(--rule);"></div>
+          <div>
+            <div style="font-family:var(--ff-mono);font-size:10.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold);margin-bottom:0.35rem;">Based in</div>
+            <div style="font-family:var(--ff-display);font-size:1.05rem;font-weight:600;color:var(--ink);line-height:1.3;">Canton, MS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certs" style="background:var(--off-white);padding:6rem 0;border-bottom:1px solid var(--rule);">
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;">
+      <div style="font-family:var(--ff-mono);font-size:11px;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">02 — Certifications</div>
+      <h2 style="font-family:var(--ff-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;line-height:1.15;margin:0 0 2.5rem;color:var(--ink);">Certifications &amp; Learning</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;">
+
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.25rem;">
+          <div style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;background:var(--accent-bg);color:var(--gold);">✓</div>
+          <div>
+            <div style="color:var(--ink);font-size:13px;font-weight:600;line-height:1.35;">B.S. Software Engineering</div>
+            <div style="color:var(--ink-mute);font-size:11px;margin-top:2px;">Mississippi State University · 2018</div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.25rem;">
+          <div style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;background:var(--accent-bg);color:var(--gold);">✓</div>
+          <div>
+            <div style="color:var(--ink);font-size:13px;font-weight:600;line-height:1.35;">Microsoft Azure Administrator</div>
+            <div style="color:var(--ink-mute);font-size:11px;margin-top:2px;">AZ-104 · Earned</div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.25rem;">
+          <div style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;background:var(--accent-bg);color:var(--gold);">✓</div>
+          <div>
+            <div style="color:var(--ink);font-size:13px;font-weight:600;line-height:1.35;">Azure Solutions Architect Expert</div>
+            <div style="color:var(--ink-mute);font-size:11px;margin-top:2px;">AZ-305 · Earned</div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.25rem;">
+          <div style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;background:var(--accent-bg);color:var(--gold);">✓</div>
+          <div>
+            <div style="color:var(--ink);font-size:13px;font-weight:600;line-height:1.35;">Lobaki XR Academy</div>
+            <div style="color:var(--ink-mute);font-size:11px;margin-top:2px;">VR / AR Development · 2019</div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.25rem;">
+          <div style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;background:var(--accent-bg);color:var(--gold);">✓</div>
+          <div>
+            <div style="color:var(--ink);font-size:13px;font-weight:600;line-height:1.35;">Anthropic / Claude Certification</div>
+            <div style="color:var(--ink-mute);font-size:11px;margin-top:2px;">AI Engineering · Earned</div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.25rem;">
+          <div style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;background:rgba(100,106,115,0.12);color:var(--amber);">…</div>
+          <div>
+            <div style="color:var(--ink);font-size:13px;font-weight:600;line-height:1.35;">Azure DevOps Engineer Expert</div>
+            <div style="color:var(--ink-mute);font-size:11px;margin-top:2px;">AZ-400 · In progress</div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.25rem;">
+          <div style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;background:rgba(100,106,115,0.12);color:var(--amber);">…</div>
+          <div>
+            <div style="color:var(--ink);font-size:13px;font-weight:600;line-height:1.35;">Certified Associate in Project Management</div>
+            <div style="color:var(--ink-mute);font-size:11px;margin-top:2px;">CAPM · In progress</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE (ROLES) -->
+  <section id="experience" style="background:var(--white);padding:6rem 0;border-bottom:1px solid var(--rule);">
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;">
+      <div style="font-family:var(--ff-mono);font-size:11px;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">03 — Experience</div>
+      <h2 style="font-family:var(--ff-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;line-height:1.15;margin:0 0 2.5rem;color:var(--ink);">Roles &amp; Responsibilities</h2>
+
+      <div style="background:var(--off-white);border:1px solid var(--rule);border-radius:10px;padding:2rem 2.25rem;margin-bottom:1.5rem;">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:0.6rem;">
+          <div>
+            <h3 style="font-family:var(--ff-display);font-size:1.4rem;font-weight:700;color:var(--ink);margin:0;line-height:1.2;">IT Specialist</h3>
+            <div style="font-size:0.95rem;color:var(--gold);margin-top:0.2rem;">All Current · Jackson, MS</div>
+          </div>
+          <div style="font-family:var(--ff-mono);font-size:12.5px;color:var(--ink-mute);white-space:nowrap;">Jun 2026 – Present</div>
+        </div>
+        <p style="font-size:1rem;color:var(--ink-soft);line-height:1.7;margin:0 0 1.5rem;max-width:780px;">Joined All Current following its acquisition of Most Electric, leading the technical merge of the two companies' systems while keeping Most Electric's software running through the transition.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem 2.5rem;">
+          <div><h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--gold);margin:0 0 0.4rem;">Systems migration</h4><p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.6;margin:0;">Leading the migration of MOST's systems — data, accounts, and software — from Most Electric into All Current.</p></div>
+          <div><h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--gold);margin:0 0 0.4rem;">IT support &amp; hardware</h4><p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.6;margin:0;">Providing helpdesk-type support and rack-and-stack work across the organization.</p></div>
+          <div><h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--gold);margin:0 0 0.4rem;">Continuity</h4><p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.6;margin:0;">Still maintaining the Most Electric website and inventory management software until the merge wraps up.</p></div>
+        </div>
+      </div>
+
+      <div style="background:var(--off-white);border:1px solid var(--rule);border-radius:10px;padding:2rem 2.25rem;margin-bottom:1.5rem;">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:0.6rem;">
+          <div>
+            <h3 style="font-family:var(--ff-display);font-size:1.4rem;font-weight:700;color:var(--ink);margin:0;line-height:1.2;">Remote Web Developer</h3>
+            <div style="font-size:0.95rem;color:var(--gold);margin-top:0.2rem;">Most Electric · Electronic-component distributor · Jackson, MS</div>
+          </div>
+          <div style="font-family:var(--ff-mono);font-size:12.5px;color:var(--ink-mute);white-space:nowrap;">Nov 2020 – Jun 2026</div>
+        </div>
+        <p style="font-size:1rem;color:var(--ink-soft);line-height:1.7;margin:0 0 1.5rem;max-width:780px;">Primary engineer for the company's web and internal software, working remotely with an international team across application development, data work, infrastructure, and IT.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem 2.5rem;">
+          <div><h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--gold);margin:0 0 0.4rem;">Application &amp; integration</h4><p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.6;margin:0;">Maintained, debuged, and extended a custom inventory management system built on .NET. Built REST API integrations in VB.NET to pull orders from the WordPress sites and update products. Created and manages four WordPress e-commerce sites.</p></div>
+          <div><h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--gold);margin:0 0 0.4rem;">Infrastructure</h4><p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.6;margin:0;">Set up and managed hosting on Azure and Google VMs. Handles DNS, SSL certificates, and domain administration.&nbsp;</p></div>
+          <div><h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--gold);margin:0 0 0.4rem;">Procurement</h4><p style="font-size:0.92rem;color:var(--ink-soft);line-height:1.6;margin:0;">Ran the full software procurement cycle: sourcing demos and quotes, comparing options, purchasing, deploying, and training employees across worksites on new tools.</p></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div style="background:var(--off-white);border:1px solid var(--rule);border-radius:10px;padding:2rem 2.25rem;">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:0.6rem;">
+          <div>
+            <h3 style="font-family:var(--ff-display);font-size:1.4rem;font-weight:700;color:var(--ink);margin:0;line-height:1.2;">Team Leader (Volunteer)</h3>
+            <div style="font-size:0.95rem;color:var(--gold);margin-top:0.2rem;">The Sanctuary · Online Community</div>
+          </div>
+          <div style="font-family:var(--ff-mono);font-size:12.5px;color:var(--ink-mute);white-space:nowrap;">Mar 2021 – Present</div>
+        </div>
+        <p style="font-size:1rem;color:var(--ink-soft);line-height:1.7;margin:0;max-width:780px;">Organizes bi-weekly events for 20+ people, overseeing execution end to end, planning/logistics, clear communication across the team, conflict resolution, and adapting to unexpected changes in a high-intensity environment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section id="work" style="background:var(--off-white);padding:6rem 0;border-bottom:1px solid var(--rule);">
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;">
+      <div style="font-family:var(--ff-mono);font-size:11px;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">04 — PERSONAL PROJECTS</div>
+      <h2 style="font-family:var(--ff-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;line-height:1.15;margin:0 0 1rem;color:var(--ink);">Dual-Database Inventory Lookup</h2>
+      <p style="font-size:1.05rem;color:var(--ink-mute);max-width:660px;margin:0 0 3rem;line-height:1.7;">A single interface that answers, "what do we actually have?" — built on my own initiative.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:4rem;align-items:start;margin-bottom:4rem;">
+        <div>
+          <p style="font-family:var(--ff-body);font-size:1.25rem;font-weight:500;color:var(--gold);margin:0 0 1.25rem;line-height:1.5;">Inventory data lived in two separate systems — Atrex (ElevateDB) and BreezeERP (SQL Server) — with no single place to check stock, pricing, sales history, or purchase orders across both.</p>
+          <div style="display:flex;flex-direction:column;gap:1.4rem;margin-top:2rem;">
+            <div style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="color:var(--gold);font-size:8px;margin-top:0.55rem;flex-shrink:0;">◆</div>
+              <div><strong style="display:block;color:var(--ink);font-size:0.95rem;margin-bottom:0.3rem;">Two front ends</strong><p style="color:var(--ink-soft);font-size:0.9rem;line-height:1.65;margin:0;">Runs as a Flask web app in the browser and inside Claude Desktop through an MCP server. The web app shows an inventory card , on-hand, available, on-order, allocated, pricing. It has sub-tabs for sales history, purchase orders, and receiving, plus a date filter and branch switcher.</p></div>
+            </div>
+            <div style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="color:var(--gold);font-size:8px;margin-top:0.55rem;flex-shrink:0;">◆</div>
+              <div><strong style="display:block;color:var(--ink);font-size:0.95rem;margin-bottom:0.3rem;">Engineering detail</strong><p style="color:var(--ink-soft);font-size:0.9rem;line-height:1.65;margin:0;">Shared query logic is reused across the web and MCP servers, with field names normalized so one table renderer handles both systems. The browser version fetches inventory and history in parallel so a slow query doesn't block the card.</p></div>
+            </div>
+            <div style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="color:var(--gold);font-size:8px;margin-top:0.55rem;flex-shrink:0;">◆</div>
+              <div><strong style="display:block;color:var(--ink);font-size:0.95rem;margin-bottom:0.3rem;">Problems solved</strong><p style="color:var(--ink-soft);font-size:0.9rem;line-height:1.65;margin:0;">ElevateDB treats some column names as reserved words, requiring quoted identifiers; a serialization helper was needed to fix early decode errors with dates and decimals.</p></div>
+            </div>
+            <div style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="color:var(--gold);font-size:8px;margin-top:0.55rem;flex-shrink:0;">◆</div>
+              <div><strong style="display:block;color:var(--ink);font-size:0.95rem;margin-bottom:0.3rem;">AI integration</strong><p style="color:var(--ink-soft);font-size:0.9rem;line-height:1.65;margin:0;">The MCP server lets an AI assistant query live inventory directly.&nbsp; Applying the Claude certification work to a real operational tool.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#0A0A0C;border:1px solid var(--rule);border-radius:10px;overflow:hidden;font-family:var(--ff-mono);box-shadow:0 6px 24px rgba(21,32,30,0.12);">
+          <div style="background:#1A1A1E;padding:0.6rem 1rem;display:flex;align-items:center;gap:0.5rem;border-bottom:1px solid rgba(255,255,255,0.05);">
+            <span style="width:10px;height:10px;border-radius:50%;background:#FF5F57;"></span>
+            <span style="width:10px;height:10px;border-radius:50%;background:#FFBD2E;"></span>
+            <span style="width:10px;height:10px;border-radius:50%;background:#28CA41;"></span>
+            <span style="font-size:10px;color:rgba(255,255,255,0.3);margin-left:0.5rem;flex:1;text-align:center;">Inventory Lookup</span>
+          </div>
+          <div style="padding:1rem;">
+            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
+              <button style="font-size:11px;padding:0.35rem 0.9rem;border-radius:4px;border:none;cursor:pointer;background:rgba(47,139,131,0.22);color:var(--gold-light);font-family:var(--ff-mono);">Atrex</button>
+              <button style="font-size:11px;padding:0.35rem 0.9rem;border-radius:4px;border:none;cursor:pointer;background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.4);font-family:var(--ff-mono);">BreezeERP</button>
+            </div>
+            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
+              <div style="flex:1;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.5rem 0.75rem;font-size:12px;color:var(--gold-light);">Stock code…</div>
+              <div style="background:var(--gold-light);color:#0A0A0C;padding:0.5rem 0.75rem;border-radius:4px;font-size:11px;font-weight:600;white-space:nowrap;">Look Up →</div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem;margin-bottom:1rem;">
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:4px;padding:0.5rem 0.6rem;text-align:center;"><div style="font-size:9px;color:rgba(255,255,255,0.35);margin-bottom:0.3rem;">On Hand</div><div style="font-size:13px;color:#fff;font-weight:500;">—</div></div>
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:4px;padding:0.5rem 0.6rem;text-align:center;"><div style="font-size:9px;color:rgba(255,255,255,0.35);margin-bottom:0.3rem;">Available</div><div style="font-size:13px;color:#fff;font-weight:500;">—</div></div>
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:4px;padding:0.5rem 0.6rem;text-align:center;"><div style="font-size:9px;color:rgba(255,255,255,0.35);margin-bottom:0.3rem;">On Order</div><div style="font-size:13px;color:#fff;font-weight:500;">—</div></div>
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:4px;padding:0.5rem 0.6rem;text-align:center;"><div style="font-size:9px;color:rgba(255,255,255,0.35);margin-bottom:0.3rem;">Price</div><div style="font-size:13px;color:#fff;font-weight:500;">—</div></div>
+            </div>
+            <div style="display:flex;gap:1rem;margin-bottom:0.75rem;border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:0.5rem;">
+              <span style="font-size:10px;color:var(--gold-light);border-bottom:1px solid var(--gold-light);padding-bottom:0.5rem;">Sales History</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.35);">Purchase Orders</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.35);">Receiving</span>
+            </div>
+            <div style="margin-bottom:1rem;">
+              <div style="display:grid;grid-template-columns:1fr 0.5fr 1fr 0.75fr;gap:0.5rem;padding:0.35rem 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:9px;color:rgba(255,255,255,0.3);letter-spacing:0.05em;"><span>Date</span><span>Qty</span><span>Customer</span><span>Value</span></div>
+              <div style="display:grid;grid-template-columns:1fr 0.5fr 1fr 0.75fr;gap:0.5rem;padding:0.35rem 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:10px;color:rgba(255,255,255,0.5);"><span>· · · ·</span><span>··</span><span>· · · · ·</span><span>· · · ·</span></div>
+              <div style="display:grid;grid-template-columns:1fr 0.5fr 1fr 0.75fr;gap:0.5rem;padding:0.35rem 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:10px;color:rgba(255,255,255,0.5);"><span>· · · ·</span><span>··</span><span>· · · · ·</span><span>· · · ·</span></div>
+              <div style="display:grid;grid-template-columns:1fr 0.5fr 1fr 0.75fr;gap:0.5rem;padding:0.35rem 0;font-size:10px;color:rgba(255,255,255,0.5);"><span>· · · ·</span><span>··</span><span>· · · · ·</span><span>· · · ·</span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.5rem;background:rgba(74,140,202,0.1);border:1px solid rgba(74,140,202,0.2);border-radius:4px;padding:0.5rem 0.75rem;font-size:10px;color:rgba(120,180,235,0.95);">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--accent-blue);animation:pulse 2s ease-in-out infinite;"></span>
+              Also available via Claude AI — query in plain English
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards2music -->
+      <div style="border-top:1px solid var(--rule);padding-top:3.5rem;">
+        <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.5rem;margin-bottom:0.5rem;">
+          <div style="display:flex;align-items:center;gap:1.1rem;">
+            <div style="display:flex;align-items:flex-end;gap:3px;height:30px;width:34px;">
+              <div style="flex:1;height:100%;background:var(--gold);transform-origin:bottom;animation:eq 0.9s ease-in-out infinite;animation-delay:0s;border-radius:1px;"></div>
+              <div style="flex:1;height:100%;background:var(--gold);transform-origin:bottom;animation:eq 0.9s ease-in-out infinite;animation-delay:0.18s;border-radius:1px;"></div>
+              <div style="flex:1;height:100%;background:var(--gold);transform-origin:bottom;animation:eq 0.9s ease-in-out infinite;animation-delay:0.36s;border-radius:1px;"></div>
+              <div style="flex:1;height:100%;background:var(--gold);transform-origin:bottom;animation:eq 0.9s ease-in-out infinite;animation-delay:0.12s;border-radius:1px;"></div>
+              <div style="flex:1;height:100%;background:var(--gold);transform-origin:bottom;animation:eq 0.9s ease-in-out infinite;animation-delay:0.3s;border-radius:1px;"></div>
+            </div>
+            <div>
+              <h3 style="font-family:var(--ff-display);font-size:1.7rem;font-weight:700;color:var(--ink);margin:0;line-height:1.1;">MTG - The Musical</h3>
+              <div style="font-size:0.9rem;color:var(--gold);margin-top:0.2rem;">Real-time reactive music engine · Personal project</div>
+            </div>
+          </div>
+          <div style="font-family:var(--ff-mono);font-size:12.5px;color:var(--ink-mute);">2026</div>
+        </div>
+        <p style="font-size:1rem;color:var(--ink-soft);max-width:780px;line-height:1.7;margin:1.25rem 0 2rem;">An application that listens to a game of Magic: The Gathering in progress and generates reactive music reflecting the colors, themes, and events of the game as it unfolds. Each of MTG's five colors carries a distinct emotional identity that maps to sound design, so game events drive the music in real time.&nbsp; A Green creature entering should feel ancient and organic; a Red board wipe should feel explosive.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;">
+          <div style="background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:1.5rem 1.6rem;">
+            <h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--gold);margin:0 0 0.5rem;">Architecture</h4>
+            <p style="font-size:0.9rem;color:var(--ink-soft);line-height:1.65;margin:0;">The input source and the music engine are separate components connected by an abstract event interface. The input (a digital game client today, a camera-based vision pipeline in a future version) can change without touching the engine.</p>
+          </div>
+          <div style="background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:1.5rem 1.6rem;">
+            <h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--gold);margin:0 0 0.5rem;">Stack</h4>
+            <p style="font-size:0.9rem;color:var(--ink-soft);line-height:1.65;margin:0;">C# / .NET 10, with FMOD for layered adaptive audio (pad, rhythm, lead, stingers). Game state is observed over a protobuf protocol; card metadata is resolved against a cached Scryfall dataset.</p>
+          </div>
+          <div style="background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:1.5rem 1.6rem;">
+            <h4 style="font-family:var(--ff-mono);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--gold);margin:0 0 0.5rem;">Status</h4>
+            <p style="font-size:0.9rem;color:var(--ink-soft);line-height:1.65;margin:0;">The adapter, event boundary, and music engine are all built and live-validated. Real card events flowing into audible, reactive audio against a live game. Tuning and a future camera-input mode are the next phases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASSCAPE -->
+  <section id="classcape" style="background:var(--white);padding:6rem 0;border-bottom:1px solid var(--rule);">
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;">
+      <div style="font-family:var(--ff-mono);font-size:11px;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">05 — STARTUP</div>
+      <h2 style="font-family:var(--ff-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;line-height:1.15;margin:0 0 1rem;color:var(--ink);">ClasScape</h2>
+      <p style="font-size:1.05rem;color:var(--ink-mute);max-width:660px;margin:0 0 3rem;line-height:1.7;">An education-technology venture I founded and led.&nbsp; From a concept to a funded, tested prototype.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:3.5rem;align-items:start;">
+        <div style="flex:1.4;">
+          <h3 style="font-family:var(--ff-display);font-size:1.15rem;color:var(--gold);margin:0 0 0.5rem;font-weight:700;">What the company was trying to do</h3>
+          <p style="color:var(--ink-soft);font-size:0.95rem;line-height:1.75;margin:0 0 0.5rem;">ClasScape was a gamification tool for student assessment, built for VR, PC, and Mac. Teachers would create quizzes through a web interface; those questions appeared inside a game, and students earned a short gameplay session afterward, with rewards tied to their performance. The goal was to raise student engagement and retention without adding work for teachers.</p>
+          <h3 style="font-family:var(--ff-display);font-size:1.15rem;color:var(--gold);margin:1.75rem 0 0.5rem;font-weight:700;">My role</h3>
+          <p style="color:var(--ink-soft);font-size:0.95rem;line-height:1.75;margin:0 0 0.5rem;">Founder and Entrepreneurial Lead. I led a small team and worked with academic mentors (Dr. Ryan Walker of MSU) and an industry mentor (Vince Jordan of Lobaki). I built the VR assessment demo using Unreal Engine 4 and WordPress, wrote and presented the grant materials, and ran school demonstrations and market research.</p>
+          <h3 style="font-family:var(--ff-display);font-size:1.15rem;color:var(--gold);margin:1.75rem 0 0.5rem;font-weight:700;">Work completed</h3>
+          <p style="color:var(--ink-soft);font-size:0.95rem;line-height:1.75;margin:0 0 0.5rem;">A functional VR demo of the assessment portion, tested in two schools and shown at the Innovate MS Accelerate conference. The demo pulled questions from a Firebase NoSQL database and presented them in random order. And a working WordPress Site for teachers to put in the questions. The project reached an alpha-prototype stage.</p>
+          <h3 style="font-family:var(--ff-display);font-size:1.15rem;color:var(--gold);margin:1.75rem 0 0.5rem;font-weight:700;">Why it Ended</h3>
+          <p style="color:var(--ink-soft);font-size:0.95rem;line-height:1.75;margin:0 0 0.5rem;">The COVID-19 pandemic in early 2020 disrupted in-person school demonstrations, which were central to investor engagement and grant-supported pilot deployments, and significantly impacted the startup’s ability to sustain momentum, leading to it winding down by January 2022.</p>
+          <h3 style="font-family:var(--ff-display);font-size:1.15rem;color:var(--gold);margin:1.75rem 0 0.5rem;font-weight:700;">What it demonstrates</h3>
+          <p style="color:var(--ink-soft);font-size:0.95rem;line-height:1.75;margin:0;">I took an idea from concept to a funded, tested prototype: writing the grants, building the software, securing mentors, and running real customer discovery.</p>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div style="background:var(--accent-bg);border:1px solid var(--rule);border-radius:8px;padding:1.5rem;">
+            <div style="font-family:var(--ff-mono);font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold);margin-bottom:0.9rem;">Funding history</div>
+            <div style="display:flex;justify-content:space-between;gap:1rem;padding:0.4rem 0;border-bottom:1px solid var(--rule);font-size:0.88rem;"><span style="color:var(--ink-soft);">Regional I-Corps</span><span style="color:var(--gold);font-family:var(--ff-mono);font-size:0.82rem;white-space:nowrap;">$3,000</span></div>
+            <div style="display:flex;justify-content:space-between;gap:1rem;padding:0.4rem 0;border-bottom:1px solid var(--rule);font-size:0.88rem;"><span style="color:var(--ink-soft);">MSU Site program</span><span style="color:var(--gold);font-family:var(--ff-mono);font-size:0.82rem;white-space:nowrap;">$7,500</span></div>
+            <div style="display:flex;justify-content:space-between;gap:1rem;padding:0.4rem 0;border-bottom:1px solid var(--rule);font-size:0.88rem;"><span style="color:var(--ink-soft);">MSU Seed Fund</span><span style="color:var(--gold);font-family:var(--ff-mono);font-size:0.82rem;white-space:nowrap;">$10,000</span></div>
+            <div style="display:flex;justify-content:space-between;gap:1rem;padding:0.4rem 0;font-size:0.88rem;"><span style="color:var(--ink-soft);">National I-Corps</span><span style="color:var(--gold);font-family:var(--ff-mono);font-size:0.82rem;white-space:nowrap;">$50,000</span></div>
+          </div>
+          <div style="background:var(--off-white);border:1px solid var(--rule);border-radius:8px;padding:1.5rem;">
+            <div style="font-family:var(--ff-mono);font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold);margin-bottom:0.9rem;">Team &amp; mentors</div>
+            <div style="font-size:0.88rem;color:var(--ink-soft);padding:0.3rem 0;border-bottom:1px solid var(--rule-soft);">Patrick Boudreaux — Entrepreneurial Lead</div>
+            <div style="font-size:0.88rem;color:var(--ink-soft);padding:0.3rem 0;border-bottom:1px solid var(--rule-soft);">Dr. Ryan M. Walker (MSU) — Technical Lead</div>
+            <div style="font-size:0.88rem;color:var(--ink-soft);padding:0.3rem 0;">Vince Jordan (Lobaki) — I-Corps Mentor</div>
+          </div>
+          <div style="background:var(--off-white);border:1px solid var(--rule);border-radius:8px;padding:1.5rem;">
+            <div style="font-family:var(--ff-mono);font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold);margin-bottom:0.9rem;">Stack</div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+              <span style="font-family:var(--ff-mono);font-size:10px;background:var(--accent-bg);color:var(--gold);padding:0.25rem 0.6rem;border-radius:3px;letter-spacing:0.06em;">Unreal Engine 4</span>
+              <span style="font-family:var(--ff-mono);font-size:10px;background:var(--accent-bg);color:var(--gold);padding:0.25rem 0.6rem;border-radius:3px;letter-spacing:0.06em;">WordPress</span>
+              <span style="font-family:var(--ff-mono);font-size:10px;background:var(--accent-bg);color:var(--gold);padding:0.25rem 0.6rem;border-radius:3px;letter-spacing:0.06em;">Firebase (NoSQL)</span>
+            </div>
+          </div>
+          <a href="https://ecenter.msstate.edu/featured-founder-patrick-boudreaux/" target="_blank" rel="noopener" class="msu-link" style="display:inline-flex;align-items:center;gap:0.5rem;color:var(--gold);text-decoration:none;font-size:0.9rem;font-weight:500;border:1px solid var(--rule);border-radius:6px;padding:0.7rem 1rem;">↗ MSU E-Center — Featured Founder</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:var(--ink);padding:6rem 0;">
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;">
+      <div style="font-family:var(--ff-mono);font-size:11px;color:var(--gold-light);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">06 — Contact</div>
+      <h2 style="font-family:var(--ff-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;line-height:1.15;margin:0 0 2.5rem;color:var(--white);">Get in Touch</h2>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(245,246,244,0.18);border-radius:12px;padding:2.25rem;max-width:440px;">
+        <div style="width:56px;height:56px;background:rgba(47,139,131,0.22);border:2px solid rgba(47,139,131,0.45);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:15px;font-weight:600;color:var(--gold-light);margin-bottom:1.1rem;">PB</div>
+        <h3 style="color:var(--white);font-size:1.25rem;font-weight:600;margin:0 0 0.3rem;">Patrick Boudreaux</h3>
+        <p style="color:rgba(245,246,244,0.5);font-size:0.88rem;margin:0 0 1.5rem;line-height:1.5;">Software Engineer · Web Developer ·</p>
+        <div style="display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem;">
+          <a href="mailto:patrick.d.boudreaux@gmail.com" class="contact-link" style="display:flex;align-items:center;gap:0.75rem;font-size:13px;color:rgba(245,246,244,0.7);text-decoration:none;padding:0.3rem 0;"><span style="color:var(--gold-light);font-size:14px;">✉</span> patrick.d.boudreaux@gmail.com</a>
+        </div>
+        <a href="mailto:patrick.d.boudreaux@gmail.com?subject=Hello%20Patrick" class="email-btn" style="display:block;text-align:center;background:var(--gold);color:#fff;padding:0.85rem 2rem;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px;">Email Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:var(--ink);border-top:1px solid rgba(245,246,244,0.12);padding:2rem 0;">
+    <div style="max-width:1160px;margin:0 auto;padding:0 2rem;">
+      <p style="text-align:center;font-size:12px;color:rgba(245,246,244,0.35);font-family:var(--ff-mono);line-height:1.7;margin:0;">Patrick Boudreaux · Software Engineer · Canton, MS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
