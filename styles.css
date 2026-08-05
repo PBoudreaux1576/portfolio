@@ -38,6 +38,10 @@ html { scroll-behavior: smooth; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 @keyframes eq { 0%, 100% { transform: scaleY(0.22); } 50% { transform: scaleY(1); } }
 
+.pdf-btn { transition: border-color 0.18s, background 0.18s, color 0.18s; }
+.pdf-btn:hover { border-color: var(--gold-light); background: rgba(47,139,131,0.14); color: #fff; }
+@keyframes think { 0%, 80%, 100% { transform: scale(0.55); opacity: 0.3; } 40% { transform: scale(1); opacity: 1; } }
+
 body {
   background: var(--white);
   color: var(--ink);
