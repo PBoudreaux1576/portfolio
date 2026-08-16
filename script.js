@@ -27,7 +27,7 @@
       var saved = localStorage.getItem(KEY);
       if (saved === 'eng' || saved === 'pm') return saved;
     } catch (e) {}
-    return 'eng';
+    return 'pm';
   }
 
   function swapContent(path) {
